@@ -49,7 +49,7 @@ function Hero() {
         <div className="row align-items-center min-vh-100">
           <div className="col-lg-6" data-aos="fade-right">
             <span className="hero-small">
-              👋 Hello, I'm
+               Hello, I'm
             </span>
             <h1 className="hero-title">
               Ayesha <span>Rehman</span>
