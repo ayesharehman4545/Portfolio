@@ -97,6 +97,7 @@ body {
   from {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(60px);
   }
@@ -227,9 +228,11 @@ body {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -252,6 +255,7 @@ body {
 
 .about {
   background: #111827;
+  text-align: center;
 }
 
 .about-img {
@@ -308,6 +312,7 @@ body {
 
 .skills {
   background: #0f172a;
+  text-align: center;
 }
 
 .skill-box {
@@ -342,6 +347,7 @@ body {
   background: linear-gradient(135deg, #0f172a, #111827);
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .services::before {
@@ -371,24 +377,30 @@ body {
 .section-subtitle {
   display: inline-block;
   padding: 8px 18px;
-  background: rgba(56, 189, 248, .15);
   color: #38bdf8;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
-.section-title h2 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
+.services .section-title h2{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.services .section-title span{
+    font-size: 40px;
+    font-weight: 700;
+    color: white ;
 }
 
-.section-title p {
-  max-width: 650px;
-  margin: auto;
-  color: #94a3b8;
+.services .section-title p{
+    font-size: 20px;
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .service-card {
@@ -415,6 +427,7 @@ body {
   transition: .5s;
 
 }
+
 .service-card:hover::before {
   left: 0;
 }
@@ -455,6 +468,7 @@ body {
   line-height: 1.9;
   margin-bottom: 30px;
 }
+
 .service-btn {
   background: linear-gradient(135deg, #2563eb, #7c3aed);
   border: none;
@@ -471,4 +485,266 @@ body {
 .service-btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(37, 99, 235, .4);
+}
+
+.projects-section {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+  border-radius: 20px;
+}
+
+.project-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.project-card img {
+  height: 230px;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .15) !important;
+}
+
+.project-card .badge {
+  border-radius: 30px;
+  padding: 8px 14px;
+}
+
+.project-card .btn {
+  border-radius: 30px;
+  transition: .3s;
+}
+
+.project-card .btn:hover {
+  transform: translateY(-3px);
+}
+
+.resume-section {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+  color: white;
+  overflow: hidden;
+}
+
+.resume-section::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: rgba(255, 255, 255, .08);
+  border-radius: 50%;
+  top: -180px;
+  left: -120px;
+  filter: blur(20px);
+}
+
+.resume-section::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(96, 165, 250, .12);
+  border-radius: 50%;
+  right: -120px;
+  bottom: -100px;
+}
+
+.resume-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.resume-section .section-title {
+  color: #fff;
+}
+
+.resume-section p {
+  color: #dbeafe;
+}
+
+.resume-card {
+  background: rgba(255, 255, 255, .08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 25px;
+  padding: 40px;
+  transition: .5s;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.resume-card::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(247, 244, 244, 0.08);
+  top: -40px;
+  right: -40px;
+}
+
+.resume-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, .35);
+}
+
+.resume-card h3 {
+  color: #fff;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  border-left: 3px solid #38bdf8;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #38bdf8;
+  border: 4px solid #fff;
+  left: -11px;
+  top: 8px;
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+.year {
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: #fff;
+  padding: 7px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.timeline-item h5 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.timeline-item p {
+  color: #dbeafe;
+  line-height: 1.7;
+}
+
+.timeline-item {
+  transition: .4s;
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+}
+
+.testimonials-section {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #fff;
+}
+
+.testimonials-section .section-title {
+  color: #fff;
+}
+
+.testimonials-section .text-muted {
+  color: #d1d5db !important;
+}
+
+.testimonial-card {
+  position: relative;
+  background: rgba(255, 255, 255, .08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 20px;
+  padding: 35px 25px;
+  transition: .4s;
+  overflow: hidden;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #60a5fa;
+}
+
+.testimonial-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3b82f6;
+  margin-bottom: 18px;
+  transition: .4s;
+}
+
+.testimonial-card:hover .testimonial-img {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.testimonial-card h4 {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.role {
+  color: #93c5fd;
+  font-size: 15px;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 18px;
+}
+
+.testimonial-card p {
+  color: #e5e7eb;
+  line-height: 1.7;
+  margin-top: 15px;
 }

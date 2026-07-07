@@ -90,7 +90,7 @@ function Hero() {
 
             <div className="hero-image">
               <img
-                src={process.env.PUBLIC_URL + "/images/pic1.jfif"}
+                src={process.env.PUBLIC_URL + "/images/pic.jfif"}
                 alt="profile"
                 className="img-fluid" />
 

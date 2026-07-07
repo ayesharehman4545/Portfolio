@@ -54,6 +54,25 @@ function Navbar() {
                             </Link>
                         </li>
 
+                         <li className="nav-item">
+                            <Link
+                                to="projects"
+                                smooth={true}
+                                duration={500}
+                                className="nav-link" >
+                                Projects
+                            </Link>
+                        </li>
+
+                         <li className="nav-item">
+                            <Link
+                                to="testimonials"
+                                smooth={true}
+                                duration={500}
+                                className="nav-link" >
+                                Testimonials
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

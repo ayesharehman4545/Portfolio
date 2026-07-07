@@ -14,7 +14,7 @@ function About() {
         <div className="row align-items-center">
           <div className="col-lg-5 text-center" data-aos="fade-right">
             <img
-              src={process.env.PUBLIC_URL + "/images/pic1.jfif"}
+              src={process.env.PUBLIC_URL + "/images/pic.jfif"}
               alt="about"
               className="img-fluid about-img"/>
           </div>

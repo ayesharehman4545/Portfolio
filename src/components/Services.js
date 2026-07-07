@@ -47,7 +47,7 @@ function Services() {
     <section id="services" className="services section-padding">
 
       <div className="container">
-        <div className="section-title text-center mb-5" data-aos="fade-up">
+        <div className="section-title  mb-5" data-aos="fade-up">
           <span className="section-subtitle"> MY SERVICES </span>
           <h2> What I Can Do For You  </h2>
           <p>
