@@ -1,44 +1,68 @@
-import React, { useEffect, useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import React from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebookF,
+  FaInstagram,
+  FaArrowUp,
+} from "react-icons/fa";
 
 function Footer() {
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        setShow(true);
-      } else {
-        setShow(false);
-      }
-    });
-  }, []);
-  const top = () => {
-    window.scrollTo({
-      top:0,
-      behavior:"smooth"
-    });
 
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
+    <footer className="footer-section">
+      <div className="container">
+        <div className="row">
 
-    <>
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <h3 className="footer-logo">Portfolio</h3>
+            <p className="footer-text">
+              Thank you for visiting my portfolio. Feel free to connect with me
+              through social media or email.
+            </p>
+          </div>
 
-      <footer className="footer">
-        <div className="container text-center">
-          <h3>Ayesha Rehman</h3>
-          <p> Frontend Developer | React Developer | UI Designer </p>
-          <hr />
-          <p> © 2026 All Rights Reserved. </p>
+          <div className="col-lg-6 text-lg-end">
+            <div className="social-links">
+              <a href="https://github.com" target="_blank"  rel="noreferrer" >
+                <FaGithub />
+              </a>
+
+              <a  href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <FaLinkedin />
+              </a>
+
+              <a  href="https://facebook.com" target="_blank" rel="noreferrer" >
+                <FaFacebookF />
+              </a>
+
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <FaInstagram />
+              </a>
+            </div>
+
+            <button className="top-btn mt-4" onClick={scrollTop} >
+              <FaArrowUp />
+            </button>
+
+          </div>
         </div>
-      </footer>
-      {show && (
-        <button className="top-btn" onClick={top} >
-          <FaArrowUp />
-        </button>
-      )}
-    </>
 
+        <hr className="footer-line" />
+        <div className="text-center">
+          <p className="copyright">
+            © 2026 Ayesha Rehman. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }
 

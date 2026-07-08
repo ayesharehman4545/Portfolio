@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import {
   FaGithub,
   FaLinkedin,
@@ -49,7 +50,7 @@ function Hero() {
         <div className="row align-items-center min-vh-100">
           <div className="col-lg-6" data-aos="fade-right">
             <span className="hero-small">
-               Hello, I'm
+              Hello, I'm
             </span>
             <h1 className="hero-title">
               Ayesha <span>Rehman</span>
@@ -70,17 +71,19 @@ function Hero() {
                 Download CV
               </button>
 
-              <button className="btn btn-outline-light hero-btn2">
-                Hire Me
-                <FaArrowRight />
-              </button>
+              <Link to="contact" smooth={true} duration={500} offset={-70} >
+                <button className="btn btn-outline-light hero-btn2">
+                  Hire Me
+                  <FaArrowRight className="ms-2" />
+                </button>
+              </Link>
 
             </div>
 
             <div className="social-icons">
-              <a href="#"> <FaGithub /> </a>
-              <a href="#"> <FaLinkedin /> </a>
-              <a href="#"> <FaInstagram /></a>
+              <a href="https://github.com"> <FaGithub /> </a>
+              <a href="https://linkedin.com"> <FaLinkedin /> </a>
+              <a href="https://instagram.com"> <FaInstagram /></a>
             </div>
           </div>
 

@@ -49,13 +49,7 @@ function Services() {
       <div className="container">
         <div className="section-title  mb-5" data-aos="fade-up">
           <span className="section-subtitle"> MY SERVICES </span>
-          <h2> What I Can Do For You  </h2>
-          <p>
-            Creating modern digital experiences with creativity,
-            performance and clean code.
-          </p>
         </div>
-
         <div className="row g-4">
           {services.map((service, index) => (
             <div

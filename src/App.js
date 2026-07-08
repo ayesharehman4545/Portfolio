@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
+import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 
@@ -36,6 +37,8 @@ function App() {
       <Projects />
 
       <Resume />
+
+      <Contact />
 
       <Testimonials />
 

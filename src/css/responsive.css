@@ -6,100 +6,109 @@
             margin-top: 15px;
 
       }
+
       .nav-link {
             margin: 15px 0;
 
       }
-}
 
-@media(max-width:991px) {
+      .contact-nav-btn {
+            width: 100%;
+            margin-top: 15px;
+            text-align: center;
+      }
       .hero {
             text-align: center;
             padding-top: 120px;
       }
+
       .hero-btns {
             justify-content: center;
 
       }
+
       .social-icons {
             justify-content: center;
             margin-bottom: 40px;
 
       }
+
       .hero-image {
             width: 320px;
             height: 320px;
 
       }
+
       .hero-title {
             font-size: 48px;
 
       }
+
       .typing {
             font-size: 26px;
 
       }
-}
-
-@media(max-width:576px) {
-      .hero-title {
-            font-size: 38px;
-
-      }
-      .typing {
-            font-size: 22px;
-
-      }
-      .hero-image {
-            width: 260px;
-            height: 260px;
-
-      }
-      .hero-text {
-            font-size: 16px;
-
-      }
-}
-
-@media(max-width:991px) {
       .about {
             text-align: center;
 
       }
+
       .about-img {
             width: 300px;
             margin-bottom: 40px;
 
       }
+
       .info-card {
             margin-bottom: 20px;
       }
-}
-
-@media(max-width:576px) {
-      .section-title h2 {
-            font-size: 34px;
-
+      .contact-section {
+            padding: 80px 0;
       }
-      .about h3 {
-            font-size: 28px;
 
+      .section-title {
+            font-size: 2.4rem;
       }
-      .about-img {
-            width: 250px;
 
+      .contact-info {
+            margin-bottom: 30px;
       }
-}
 
-@media(max-width:992px) {
+      .contact-info,
+      .contact-form {
+            padding: 30px;
+      }
+       .footer-logo,
+      .footer-text {
+            text-align: center;
+            margin: auto;
+      }
+
+      .social-links {
+            justify-content: center;
+            margin-top: 30px;
+      }
+
+      .top-btn {
+            display: block;
+            margin: 25px auto 0;
+      }
       .section-title h2 {
             font-size: 38px;
 
       }
+
       .service-card {
             padding: 35px 25px;
 
       }
+      .resume-card {
+            margin-bottom: 30px;
+      }
+      .testimonial-card {
+            margin-bottom: 20px;
+      }
+
 }
 
 @media(max-width:768px) {
@@ -107,46 +116,27 @@
             padding: 90px 0;
 
       }
+
       .section-title h2 {
             font-size: 32px;
 
       }
+
       .section-title p {
             font-size: 15px;
 
       }
+
       .service-icon {
             width: 75px;
             height: 75px;
             font-size: 30px;
       }
+
       .service-card {
             padding: 30px 20px;
       }
-}
-
-@media(max-width:576px) {
-      .section-title h2 {
-            font-size: 28px;
-      }
-      .service-card {
-            border-radius: 20px;
-      }
-      .service-btn {
-            width: 100%;
-            justify-content: center;
-      }
-}
-
-
-@media(max-width:992px) {
-      .resume-card {
-            margin-bottom: 30px;
-      }
-}
-
-@media(max-width:768px) {
-      .resume-section {
+       .resume-section {
             padding: 70px 0;
       }
 
@@ -161,9 +151,107 @@
       .download-btn {
             width: 100%;
       }
+       .contact-section {
+            padding: 70px 0;
+      }
+
+      .section-title {
+            font-size: 2rem;
+      }
+
+      .section-subtitle {
+            font-size: 15px;
+            padding: 0 10px;
+      }
+
+      .contact-info,
+      .contact-form {
+            padding: 25px;
+            border-radius: 20px;
+      }
+
+      .contact-box {
+            gap: 15px;
+      }
+
+      .contact-box .icon {
+            width: 55px;
+            height: 55px;
+            font-size: 20px;
+            border-radius: 15px;
+      }
+
+      .contact-box h5 {
+            font-size: 18px;
+      }
+
+      .contact-box p {
+            font-size: 14px;
+      }
+
+      .contact-form .form-control {
+            height: 52px;
+            font-size: 15px;
+      }
+
+      .contact-form textarea.form-control {
+            height: 150px;
+      }
+
+      .contact-btn {
+            height: 52px;
+            font-size: 16px;
+      }
 }
 
+
 @media(max-width:576px) {
+      .hero-title {
+            font-size: 38px;
+
+      }
+
+      .typing {
+            font-size: 22px;
+
+      }
+
+      .hero-image {
+            width: 260px;
+            height: 260px;
+
+      }
+
+      .hero-text {
+            font-size: 16px;
+
+      }
+       .section-title h2 {
+            font-size: 34px;
+
+      }
+
+      .about h3 {
+            font-size: 28px;
+
+      }
+
+      .about-img {
+            width: 250px;
+
+      }
+       .section-title h2 {
+            font-size: 28px;
+      }
+
+      .service-card {
+            border-radius: 20px;
+      }
+
+      .service-btn {
+            width: 100%;
+            justify-content: center;
+      }
       .resume-card {
             padding: 25px;
       }
@@ -180,16 +268,7 @@
       .year {
             font-size: 12px;
       }
-}
-
-@media(max-width:992px) {
-      .testimonial-card {
-            margin-bottom: 20px;
-      }
-}
-
-@media(max-width:576px) {
-      .testimonial-card {
+       .testimonial-card {
             padding: 25px;
       }
 
@@ -197,5 +276,45 @@
             width: 80px;
             height: 80px;
       }
+      .section-title {
+            font-size: 1.8rem;
+      }
 
+      .section-subtitle {
+            font-size: 14px;
+      }
+
+      .contact-info,
+      .contact-form {
+            padding: 20px;
+      }
+
+      .contact-box {
+            flex-direction: column;
+            text-align: center;
+      }
+
+      .contact-box .icon {
+            margin-bottom: 10px;
+      }
+
+      .contact-btn {
+            font-size: 15px;
+      }
+       .social-links {
+            gap: 10px;
+      }
+
+      .social-links a {
+            width: 42px;
+            height: 42px;
+            font-size: 18px;
+      }
+      .footer-logo {
+            font-size: 1.7rem;
+      }
+      .copyright {
+            font-size: 14px;
+      }
 }
+
